@@ -172,7 +172,7 @@ export default class MultiStyleText extends PIXI.Text {
 		stroke: "black",
 		strokeThickness: 0,
 		textBaseline: "alphabetic",
-		valign: "baseline",
+		valign: "middle",
 		wordWrap: false,
 		wordWrapWidth: 100,
 		tagStyle: "xml"
@@ -460,7 +460,7 @@ export default class MultiStyleText extends PIXI.Text {
 			for (let j = 0; j < outputTextData[i].length; j++) {
 				let sty = outputTextData[i][j].style;
 
-        lineHeight = sty.lineHeight;
+        lineHeight = sty.lineHeight ? sty.lineHeight - 1 : 0;
 
 				this.context.font = this.getFontString(sty);
 
