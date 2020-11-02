@@ -172,7 +172,7 @@ export default class MultiStyleText extends PIXI.Text {
 		stroke: "black",
 		strokeThickness: 0,
 		textBaseline: "alphabetic",
-		valign: "middle",
+		valign: "baseline",
 		wordWrap: false,
 		wordWrapWidth: 100,
 		tagStyle: "xml"
