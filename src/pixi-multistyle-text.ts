@@ -455,12 +455,9 @@ export default class MultiStyleText extends PIXI.Text {
 			let lineWidth = 0;
 			let lineYMin = 0;
 			let lineYMax = 0;
-      let lineHeight = 0;
 			let baseline = 0;
 			for (let j = 0; j < outputTextData[i].length; j++) {
 				let sty = outputTextData[i][j].style;
-
-        lineHeight = sty.lineHeight ? sty.lineHeight - 1 : 0;
 
 				this.context.font = this.getFontString(sty);
 
@@ -508,11 +505,16 @@ export default class MultiStyleText extends PIXI.Text {
 							lineYMax,
 							outputTextData[i][j].fontProperties.ascent);
 				}
+
+				if (sty.lineHeight) {
+				  lineYMin = 0;
+          lineYMax = sty.lineHeight;
+        }
 			}
 
 			lineWidths[i] = lineWidth;
 			lineYMins[i] = lineYMin;
-      lineYMaxs[i] = Math.max(lineYMax, lineHeight);
+			lineYMaxs[i] = lineYMax;
 			maxLineWidth = Math.max(maxLineWidth, lineWidth);
 		}
 

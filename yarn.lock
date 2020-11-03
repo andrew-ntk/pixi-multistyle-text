@@ -4249,7 +4249,7 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pixi.js-legacy@^5.2.1:
+pixi.js-legacy@5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/pixi.js-legacy/-/pixi.js-legacy-5.2.1.tgz#7246158055e61cccbaf14a573c7272f90a7a9abb"
   integrity sha512-ZdqACk9lV5fY/sS+TI/EhLnGo3EPhMkTAeUEhdBVO0gC2lr7ZK/c8VoeSsn+7TvFFIq9AhIaoWc2J+eibHXRdQ==
